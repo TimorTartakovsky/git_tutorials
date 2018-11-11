@@ -344,8 +344,36 @@ git clone git@github.com:TimorTartakovsky/git_tutorials.git <name you gave to re
 Will fetch all the content into specified folder.
 <br />
 
+To push something to a remote repository use this command: 
 
+```
+git push origin <branch you want to push in remote repo>
+```
+<br />
 
+```
+git config --global push.default simple
+```
+
+This is an optional configuration. Point the git how to push if you didn't specified the branch you want to push to.
+<br />
+
+## Fetch and Pull
+
+We should understand that the repository is only the file system feature allows you to publish your code online.
+<br />
+In case you have changes of the same files both localy and remotely , then we have to decide which way we want to get the data from remoted branch to a localhost.
+<br />
+ What is 'pull' it does a fetch before getting data (so it is both together 'fetch' and 'pull')
+ <br />
+ In case if the contant is not able to be migrate not -fast-forward way, not auto-merge, then we have to first 'fetch' menually and then pull.
+ <br />
+
+ ```
+ git fetch
+ git pull
+ ```
+<br />
 
 
 
