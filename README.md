@@ -398,6 +398,42 @@ git remote show
 Information about remoted refs.
 <br />
 
+To push on different remote branch: 
+
+``` 
+git push -u origin <branch to push>
+```
+<br />
+
+```
+git checkout master
+git pull
+git merge <branch to merge with>
+git status
+git branch -d <branch to merge with>
+git branch -a
+git fetch -p
+git branch -a
+```
+<br />
+
+
+```
+git fetch
+git checkout <branch>
+
+```
+<br />
+
+```
+git pull --all
+```
+<br />
+
+```
+git pull --rebase ?
+```
+
 
 
 
