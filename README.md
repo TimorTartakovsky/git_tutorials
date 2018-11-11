@@ -403,7 +403,52 @@ To push on different remote branch:
 ``` 
 git push -u origin <branch to push>
 ```
+
+# To avoid merge conflicts between branch on localhost and remote
+
+Example: 
+
+example.txt files was changed and already pushed to a repository on master branch.
+Localy we have the same file chnaged deeply. To avoid conflicts from pull. 
 <br />
+do next:
+
+```
+git fetch --all
+```
+Go to a remote repository and copy hash number of a commit you want to merge with.
+
+```
+git hist
+* 2b1db08 (origin/master, origin/HEAD) Check commit
+* 1f4767d (HEAD -> master) commit
+* 2932df2 commit
+* 0c42349 assets update
+* a80bf43 commit
+* e05d553 commit
+* 751ec92 commit
+* 4347c2e commit
+* d8c2d3c commit
+* 3417553 commit
+* fc79ada new commit
+* 411e677 Commit
+* e72b113 Configuration chahges
+* 49ef7e5 Initialize my tutorial repository
+```
+As you see we are below the current HEAD on the remote branch.
+```
+git difftool 2b1db08 1f4767d
+``` 
+This will allow you to manage a changes you have on both sides.
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
 
 ```
 git checkout master
