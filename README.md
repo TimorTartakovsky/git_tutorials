@@ -210,3 +210,68 @@ git checkout <branch name>
 <br />
 
 ## Merging branches
+
+git-merge - Join two or more development histories together. <br />
+Incorporates changes from the named commits (since the time their histories diverged from the current branch) into the current branch. This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
+
+Assume the following history exists and the current branch is "master":
+
+```
+ 		A---B---C topic
+	 /
+    D---E---F---G master
+```
+Then "git merge topic" will replay the changes made on the topic branch since it diverged from master (i.e., E) until its current commit (C) on top of master, and record the result in a new commit along with the names of the two parent commits and a log message from the user describing the changes.
+
+```
+	  A---B---C topic
+	 /         \
+    D---E---F---G---H master
+```
+
+The second syntax ("git merge --abort") can only be run after the merge has resulted in conflicts. git merge --abort will abort the merge process and try to reconstruct the pre-merge state. However, if there were uncommitted changes when the merge started (and especially if those changes were further modified after the merge was started), git merge --abort will in some cases be unable to reconstruct the original (pre-merge) changes. Therefore:
+
+__Warning__: Running git merge with non-trivial uncommitted changes is discouraged: while possible, it may leave you in a state that is hard to back out of in the case of a conflict.
+
+The third syntax ("git merge --continue") can only be run after the merge has resulted in conflicts.
+
+Now several commands to practice: 
+
+```
+git merge <branch name with which current branch will be merged>
+```
+Remember, choosed branch will be merged with the current branch. <br />
+In case two branches didn't warked on the same places in code, - fast-forward mode will be used.
+<br >
+
+```
+git branch -d <branch name 'hash code'>
+```
+__Delete__ a branch 
+<br />
+
+```
+git branch -a
+```
+Show all the branches.
+<br />
+
+```
+cat <file name>
+```
+Shows the file in VIM to see what is inside the file.
+
+## GIT TAG
+
+Like most VCSs, Git has the ability to tag specific points in history as being important. Typically people use this functionality to mark release points (v1.0, and so on). In this section, you’ll learn how to list the available tags, how to create new tags, and what the different types of tags are. <br /><br />
+
+It usefull when you want to put an accent on one specific commit (let sey the commit that has the most update changes without conflicts)<br />
+
+
+
+
+
+
+
+
+
