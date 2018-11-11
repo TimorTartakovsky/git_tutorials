@@ -320,7 +320,17 @@ git ref log
 ```
 Shows all the actions made on that branch.<br />
 
+## Repositories
 
+How to clone a repository: 
+
+![Image of Yaktocat](./assets/clone_first_step.PNG)
+
+
+
+```
+git clone git@github.com:TimorTartakovsky/git_tutorials.git
+```
 
 
 
