@@ -150,5 +150,63 @@ It will help to shortcut this command :
 ```
 git hist - short way to call it.
 ```
+<br />
+
+```
+git config --global --list
+```
+This command will show you all the global configurations you have.
+<br />
+
+```
+git hist -- <file name>
+```
+This showing the history of the particular file.
+<br />
+
+```
+git mv <old file name> <new file name>
+```
+To change the file name, use this command.<br />
+Then commit it.
+
+```
+git add -u
+```
+This command updates files before adding in to a stage.  (used in case some files changed the extension ....)
+<br />
+
+```
+git add -A
+```
+adds all the modifications.
 
 
+## Barnching and Merging
+
+'HEAD' the last commit?
+
+Answer. HEAD is a reference to the last commit in the currently check-out branch. You can think of the HEAD as the "current branch". <br />
+When you switch branches with git checkout, the HEAD revision changes to point to the tip of the new branch. <br />
+You can see what HEAD points to by doing: cat .git/HEAD. <br />
+
+To manage a branches on your localhost just run the following commands: 
+```
+git branch
+```
+It will show you branch you working on  colored 'green' and other white in default configuration.
+<br />
+
+To create a new branch this command will help you. 
+```
+git checkout -b
+```
+<br />
+
+To move from one branch to another: 
+```
+git checkout <branch name>
+```
+<br />
+
+## Merging branches
