@@ -375,6 +375,28 @@ In case you have changes of the same files both localy and remotely , then we ha
  ```
 <br />
 
+### Remoted
+
+```
+git remote -v
+origin  git@github.com:TimorTartakovsky/git_tutorials.git (fetch)
+origin  git@github.com:TimorTartakovsky/git_tutorials.git (push)
+```
+Shows the refs on remoted repo;
+<br />
+
+To update it:
+
+```
+git remote set-url origin <example: git@github.com:TimorTartakovsky/git_tutorials.git>
+```
+<br />
+
+```
+git remote show
+```
+Information about remoted refs.
+<br />
 
 
 
