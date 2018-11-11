@@ -325,10 +325,10 @@ Shows all the actions made on that branch.<br />
 How to clone a repository: 
 
 Step 1.
-![Image of Yaktocat](./assets/clone_first_step.png)
+![Image of Yaktocat](./assets/clone_first_steps.png)
 <br />
 Step 2.
-![Image of Yaktocat](./assets/clone_second_step.png)
+![Image of Yaktocat](./assets/clone_second_steps.png)
 
 
 
