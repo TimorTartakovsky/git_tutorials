@@ -324,14 +324,25 @@ Shows all the actions made on that branch.<br />
 
 How to clone a repository: 
 
-![Image of Yaktocat](./assets/clone_first_step.PNG)
+Step 1.
+![Image of Yaktocat](./assets/clone_first_step.png)
+<br />
+Step 2.
+![Image of Yaktocat](./assets/clone_second_step.png)
 
 
 
 ```
 git clone git@github.com:TimorTartakovsky/git_tutorials.git
 ```
+This command will fetch all the content of that repository in a default repo name given inside. 
+<br />
 
+```
+git clone git@github.com:TimorTartakovsky/git_tutorials.git <name you gave to repository>
+```
+Will fetch all the content into specified folder.
+<br />
 
 
 
