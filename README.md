@@ -81,3 +81,74 @@ git add .
 ```
 allow to accept all the files
 <br />
+
+```
+git commit -m "<T.Tartakovsky> #US_number 'Store the passed git tutorials' reviewer: Itamar"
+```
+This way we may do one commit and to commit all the added files run this
+```
+git commit
+```
+Then the multi commit window is opened and editable. To execute it press 'ctrl' + 's' -> 'ctrl' + 'w'
+<br />
+
+To see GIT inner folder:
+```
+cd .git
+tree
+```
+It will show construction of a git tree.
+<br />
+
+```
+rm -rf <folder name>
+```
+It will delete the file or folder
+<br />
+
+```
+git log
+git show
+```
+This too commands allows you to see details of the commits
+<br />
+
+```
+git ls-files
+```
+Shows all the racked files.
+<br />
+
+```
+git commit -am "Commit message"
+```
+It will track the files and then commit them.
+<br />
+
+```
+git reset HEAD <file name>
+```
+It will unstage already staged file
+<br />
+
+```
+git checkout <file name>
+```
+reset file on the state that was before it was modified.
+<br />
+
+```
+git log --oneline --graph --decorate --all
+```
+Run this command to better see a tracking trace of commits.
+<br />
+
+```
+git config --global alias.hist "log --oneline --graph --decorate --all"
+```
+It will help to shortcut this command :
+```
+git hist - short way to call it.
+```
+
+
