@@ -259,13 +259,68 @@ Show all the branches.
 ```
 cat <file name>
 ```
-Shows the file in VIM to see what is inside the file.
+Shows the file in VIM to see what is inside the file. <br />
+
+In case when local branches have the same files merged, like shown above
+
+```
+git mergetool
+```
+mergetool will help you to reconstruct the files and make conflicted merge being less painfull (or just use your IDE)
 
 ## GIT TAG
 
 Like most VCSs, Git has the ability to tag specific points in history as being important. Typically people use this functionality to mark release points (v1.0, and so on). In this section, you’ll learn how to list the available tags, how to create new tags, and what the different types of tags are. <br /><br />
 
 It usefull when you want to put an accent on one specific commit (let sey the commit that has the most update changes without conflicts)<br />
+
+### Commands: 
+
+```
+git tag -a <the name of the tag> -m "commit message"
+```
+It does the pointer with tag in that particular commit which could be fined easily after.<br />
+
+```
+git tag
+git tag --all 
+```
+Shows a tags. 
+<br />
+```
+git show <name of the tag>
+```
+Shows a commit with that tag. 
+<br />
+
+```
+git stash list
+```
+shows all stash.<br />
+
+## Reset
+
+Git reset is a less distructive command then checkout. It allows to move HEAD from one point to another.<br />
+It has 3 options:
+
+1. '--soft' is low distructive
+2. 'hard' distructive
+3. 'mixed' - is recursive
+<br />
+
+example: 
+```
+git reset <commit number> --soft
+```
+This command chnaged position of the head.
+<br />
+
+```
+git ref log
+```
+Shows all the actions made on that branch.<br />
+
+
 
 
 
